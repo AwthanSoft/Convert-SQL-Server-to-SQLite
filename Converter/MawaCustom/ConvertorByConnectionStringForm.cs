@@ -89,9 +89,8 @@ namespace Converter.MawaCustom
                 UpdateSensitivity();
                 return;
             }
-
             string sqlConnString = this.ConnectionString;
-
+            bool createViews = cbxCreateViews.Checked;
             string sqlitePath = txtSQLitePath.Text.Trim();
             this.Cursor = Cursors.WaitCursor;
             SqlConversionHandler handler = new SqlConversionHandler(delegate (bool done,
@@ -173,13 +172,7 @@ namespace Converter.MawaCustom
             if (!cbxEncrypt.Checked)
                 password = null;
             SqlServerToSQLite.ConvertSqlServerToSQLiteDatabase(sqlConnString, sqlitePath, password, handler,
-                selectionHandler, viewFailureHandler, cbxTriggers.Checked);
-        }
-
-        private void lnkMessage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            AuthorMessageForm frm = new AuthorMessageForm();
-            frm.ShowDialog(this);
+                selectionHandler, viewFailureHandler, cbxTriggers.Checked, createViews);
         }
 
         #endregion
@@ -200,6 +193,8 @@ namespace Converter.MawaCustom
             btnBrowseSQLitePath.Enabled = !SqlServerToSQLite.IsActive;
             cbxEncrypt.Enabled = !SqlServerToSQLite.IsActive;
             txtPassword.Enabled = cbxEncrypt.Checked && cbxEncrypt.Enabled;
+            cbxCreateViews.Enabled = !SqlServerToSQLite.IsActive;
+            cbxTriggers.Enabled = !SqlServerToSQLite.IsActive;
         }
 
 
