@@ -1,0 +1,8 @@
+D:\00proj\GithubClones\ConvertSql ServerToLite\DbAccess\bin\Debug\DbAccess.dll
+D:\00proj\GithubClones\ConvertSql ServerToLite\DbAccess\bin\Debug\DbAccess.pdb
+D:\00proj\GithubClones\ConvertSql ServerToLite\DbAccess\bin\Debug\log4net.dll
+D:\00proj\GithubClones\ConvertSql ServerToLite\DbAccess\bin\Debug\System.Data.SQLite.dll
+D:\00proj\GithubClones\ConvertSql ServerToLite\DbAccess\obj\Debug\DbAccess.csproj.CoreCompileInputs.cache
+D:\00proj\GithubClones\ConvertSql ServerToLite\DbAccess\obj\Debug\DbAccess.csproj.CopyComplete
+D:\00proj\GithubClones\ConvertSql ServerToLite\DbAccess\obj\Debug\DbAccess.dll
+D:\00proj\GithubClones\ConvertSql ServerToLite\DbAccess\obj\Debug\DbAccess.pdb
