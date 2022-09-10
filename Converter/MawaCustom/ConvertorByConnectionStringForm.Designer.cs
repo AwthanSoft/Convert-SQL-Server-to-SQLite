@@ -58,7 +58,7 @@ namespace Converter.MawaCustom
             // txtSQLitePath
             // 
             this.txtSQLitePath.Location = new System.Drawing.Point(385, 249);
-            this.txtSQLitePath.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.txtSQLitePath.Margin = new System.Windows.Forms.Padding(8);
             this.txtSQLitePath.Name = "txtSQLitePath";
             this.txtSQLitePath.Size = new System.Drawing.Size(1066, 40);
             this.txtSQLitePath.TabIndex = 11;
@@ -67,7 +67,7 @@ namespace Converter.MawaCustom
             // btnBrowseSQLitePath
             // 
             this.btnBrowseSQLitePath.Location = new System.Drawing.Point(1472, 244);
-            this.btnBrowseSQLitePath.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.btnBrowseSQLitePath.Margin = new System.Windows.Forms.Padding(8);
             this.btnBrowseSQLitePath.Name = "btnBrowseSQLitePath";
             this.btnBrowseSQLitePath.Size = new System.Drawing.Size(188, 58);
             this.btnBrowseSQLitePath.TabIndex = 12;
@@ -79,7 +79,7 @@ namespace Converter.MawaCustom
             // 
             this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnStart.Location = new System.Drawing.Point(912, 548);
-            this.btnStart.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(8);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(495, 58);
             this.btnStart.TabIndex = 17;
@@ -97,7 +97,7 @@ namespace Converter.MawaCustom
             // 
             this.pbrProgress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pbrProgress.Location = new System.Drawing.Point(30, 495);
-            this.pbrProgress.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.pbrProgress.Margin = new System.Windows.Forms.Padding(8);
             this.pbrProgress.Name = "pbrProgress";
             this.pbrProgress.Size = new System.Drawing.Size(1630, 46);
             this.pbrProgress.TabIndex = 16;
@@ -116,7 +116,7 @@ namespace Converter.MawaCustom
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnCancel.Location = new System.Drawing.Point(1422, 548);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(8);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(238, 58);
             this.btnCancel.TabIndex = 18;
@@ -128,7 +128,7 @@ namespace Converter.MawaCustom
             // 
             this.cbxEncrypt.AutoSize = true;
             this.cbxEncrypt.Location = new System.Drawing.Point(38, 322);
-            this.cbxEncrypt.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.cbxEncrypt.Margin = new System.Windows.Forms.Padding(8);
             this.cbxEncrypt.Name = "cbxEncrypt";
             this.cbxEncrypt.Size = new System.Drawing.Size(309, 37);
             this.cbxEncrypt.TabIndex = 13;
@@ -139,7 +139,7 @@ namespace Converter.MawaCustom
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(385, 317);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(8);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(486, 40);
@@ -150,7 +150,7 @@ namespace Converter.MawaCustom
             // 
             this.cbxTriggers.AutoSize = true;
             this.cbxTriggers.Location = new System.Drawing.Point(38, 383);
-            this.cbxTriggers.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.cbxTriggers.Margin = new System.Windows.Forms.Padding(8);
             this.cbxTriggers.Name = "cbxTriggers";
             this.cbxTriggers.Size = new System.Drawing.Size(500, 37);
             this.cbxTriggers.TabIndex = 19;
@@ -161,7 +161,7 @@ namespace Converter.MawaCustom
             // 
             this.cbxCreateViews.AutoSize = true;
             this.cbxCreateViews.Location = new System.Drawing.Point(555, 383);
-            this.cbxCreateViews.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.cbxCreateViews.Margin = new System.Windows.Forms.Padding(8);
             this.cbxCreateViews.Name = "cbxCreateViews";
             this.cbxCreateViews.Size = new System.Drawing.Size(618, 37);
             this.cbxCreateViews.TabIndex = 20;
@@ -197,10 +197,11 @@ namespace Converter.MawaCustom
             this.label1.TabIndex = 22;
             this.label1.Text = "Database Connection:";
             // 
-            // ConvertorByConnectionStringForm02
+            // ConvertorByConnectionStringForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1690, 614);
             this.Controls.Add(this.TestConnection_Btn);
             this.Controls.Add(this.ConnectionString_TextBox);
@@ -216,10 +217,10 @@ namespace Converter.MawaCustom
             this.Controls.Add(this.btnBrowseSQLitePath);
             this.Controls.Add(this.txtSQLitePath);
             this.Controls.Add(this.label2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Margin = new System.Windows.Forms.Padding(8);
             this.MaximizeBox = false;
-            this.Name = "ConvertorByConnectionStringForm02";
+            this.Name = "ConvertorByConnectionStringForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SQL Server To SQLite DB Converter";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
